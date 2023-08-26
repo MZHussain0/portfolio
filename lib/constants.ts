@@ -1,6 +1,5 @@
 ﻿import {
   CpuIcon,
-  DiscIcon,
   EditIcon,
   GithubIcon,
   LinkedinIcon,
@@ -11,32 +10,27 @@ export const keyLinks = [
   {
     title: "Projects",
     href: "/projects",
-    icon: CpuIcon,
+    icon: "/project.png",
   },
   {
     title: "Github",
-    href: "/",
-    icon: GithubIcon,
+    href: "https://github.com/MZHussain0",
+    icon: "/github.png",
   },
   {
     title: "LinkedIn",
     href: "/",
-    icon: LinkedinIcon,
-  },
-  {
-    title: "Discord",
-    href: "/",
-    icon: DiscIcon,
+    icon: "/linkedin.png",
   },
   {
     title: "mzhussain092@gmail.com",
-    href: "/",
-    icon: MailIcon,
+    href: "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=mzhussain092@gmail.com&body=HI%3Cbr%3Efirstname%3Cbr%3Elastname%22%3E",
+    icon: "/gmail.png",
   },
   {
     title: "+91 9380030355",
     href: "/",
-    icon: EditIcon,
+    icon: "/whatsapp.png",
   },
 ];
 

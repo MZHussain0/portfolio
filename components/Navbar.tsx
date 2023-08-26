@@ -29,7 +29,9 @@ const Navbar: FC<NavbarProps> = ({}) => {
         <Button
           className="opacity-80 hover:opacity-100 transition duration-200 text-lg rounded-xl"
           variant={"destructive"}>
-          Resume
+          <a href="/docs/resume.pdf" download="resume.pdf">
+            Resume{" "}
+          </a>
         </Button>
       </div>
     </div>

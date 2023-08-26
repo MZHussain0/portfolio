@@ -1,11 +1,14 @@
-﻿import { FC } from "react";
+﻿"use client";
+import { FC } from "react";
 import { Button } from "./ui/button";
 import Image from "next/image";
 import { CpuIcon, DownloadCloud } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 interface HeroLeftProps {}
 
 const HeroLeft: FC<HeroLeftProps> = ({}) => {
+  const router = useRouter();
   return (
     <div className="col-span-1 flex flex-wrap gap-4 p-4 items-center justify-center">
       <div className="relative col-span-1 ml-8 w-60 ">
@@ -29,6 +32,7 @@ const HeroLeft: FC<HeroLeftProps> = ({}) => {
         </p>
         <div className=" flex flex-col items-center justify-center gap-4">
           <Button
+            onClick={() => router.push("/projects")}
             size={"lg"}
             variant={"destructive"}
             className="group px-8 py-6 text-lg rounded-xl">
@@ -39,7 +43,10 @@ const HeroLeft: FC<HeroLeftProps> = ({}) => {
             size={"lg"}
             variant={"destructive"}
             className="group px-8 py-6 text-lg rounded-xl">
-            Resume{" "}
+            <a href="/docs/resume.pdf" download="resume.pdf">
+              Resume{" "}
+            </a>
+
             <DownloadCloud className="w-6 h-6 ml-2 group-hover:translate-x-2 transition duration-200" />
           </Button>
         </div>

@@ -18,7 +18,7 @@ const Skills: FC<SkillsProps> = ({}) => {
           <Badge
             key={skill.id}
             color="red"
-            className="group px-4 py-2 text-xl bg-slate-300 border-b-card  hover:-translate-y-1 transition duration-300">
+            className="group px-4 py-2 text-xl bg-slate-300 hover:bg-slate-300 border-b-card  hover:-translate-y-1 transition duration-300">
             <Image
               src={skill.url}
               width={30}

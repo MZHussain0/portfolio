@@ -1,7 +1,4 @@
-﻿import Image from "next/image";
-import { FC } from "react";
-import { Button } from "./ui/button";
-import { CpuIcon, DownloadCloud } from "lucide-react";
+﻿import { FC } from "react";
 import HeroLeft from "./HeroLeft";
 import HeroRight from "./HeroRight";
 
@@ -16,8 +13,8 @@ const Hero: FC<HeroProps> = ({}) => {
             Hey! My name is{" "}
             <span className="text-destructive font-bold">M.Z. Hussain</span>
           </p>
-          <p className=" text-base sm:text-xl text-center pt-4 underline  decoration-destructive decoration-2 text-background">
-            -- FULLSTACK DEVELOPER --
+          <p className=" text-base sm:text-xl text-center pt-4 underline decoration-2 decoration-green-700 text-background hover:tracking-widest tranistion duration-1000 hover:text-green-700 hover:no-underline ">
+            - FULLSTACK DEVELOPER -
           </p>
         </div>
       </div>

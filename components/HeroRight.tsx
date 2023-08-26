@@ -2,7 +2,6 @@
 import { FC } from "react";
 import { Button } from "./ui/button";
 import Image from "next/image";
-import Link from "next/link";
 
 interface HeroRightProps {}
 
@@ -17,7 +16,7 @@ const HeroRight: FC<HeroRightProps> = ({}) => {
             key={link.title}
             variant={"ghost"}
             size={"lg"}
-            className="group border-2 text-lg hover:bg-destructive">
+            className="group border-2 text-lg hover:bg-destructive hover:rounded-xl">
             <a
               href={link.href}
               target="_blank"

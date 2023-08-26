@@ -3,7 +3,7 @@ import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { FC } from "react";
 import Image from "next/image";
 import { Button } from "./ui/button";
-import { CodeIcon, Globe2Icon, GlobeIcon, WholeWordIcon } from "lucide-react";
+import { CodeIcon, GlobeIcon } from "lucide-react";
 
 interface ProjectsProps {}
 
@@ -26,7 +26,7 @@ const Projects: FC<ProjectsProps> = ({}) => {
               width={600}
               height={200}
               alt={project.title}
-              className="rounded-xl object-center object-contain hover:scale-105 hover:rotate-2 hover: transition duration-300"
+              className="rounded-xl object-center object-contain opacity-50 hover:scale-105 hover:rotate-2 hover: transition duration-300"
             />
 
             <CardHeader>

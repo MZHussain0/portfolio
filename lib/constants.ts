@@ -1,12 +1,4 @@
-﻿import {
-  CpuIcon,
-  EditIcon,
-  GithubIcon,
-  LinkedinIcon,
-  MailIcon,
-} from "lucide-react";
-
-export const keyLinks = [
+﻿export const keyLinks = [
   {
     title: "Projects",
     href: "/projects",

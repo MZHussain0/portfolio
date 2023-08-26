@@ -1,6 +1,5 @@
 ﻿import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
-import { SeparatorHorizontal } from "lucide-react";
 import { FC } from "react";
 
 interface ProjectPageProps {}

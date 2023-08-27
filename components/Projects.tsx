@@ -3,7 +3,7 @@ import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { FC } from "react";
 import Image from "next/image";
 import { Button } from "./ui/button";
-import { CodeIcon, GlobeIcon } from "lucide-react";
+import { GithubIcon, GlobeIcon } from "lucide-react";
 
 interface ProjectsProps {}
 
@@ -20,13 +20,13 @@ const Projects: FC<ProjectsProps> = ({}) => {
         {projects.map((project) => (
           <Card
             key={project.id}
-            className="bg-muted text-primary rounded-xl overflow-hidden hover:shadow-md hover:shadow-destructive transition duration-500">
+            className="bg-muted text-primary rounded-xl overflow-hidden hover:shadow-md hover:shadow-destructive transition duration-500 flex flex-col">
             <Image
               src={project.image}
               width={600}
               height={200}
               alt={project.title}
-              className="rounded-xl object-center object-contain opacity-50 hover:scale-105 hover:rotate-2 hover: transition duration-300"
+              className="rounded-xl object-center object-contain  hover:scale-105 hover:rotate-2 hover: transition duration-300"
             />
 
             <CardHeader>
@@ -34,16 +34,28 @@ const Projects: FC<ProjectsProps> = ({}) => {
               <CardDescription>{project.description}</CardDescription>
             </CardHeader>
 
-            <div className=" px-2 my-2 flex items-center justify-between gap-2">
+            <div className=" px-2 my-2 flex items-center justify-between gap-2 mt-auto">
               <Button
                 className="group w-full text-lg rounded-xl"
                 variant={"destructive"}>
-                Demo{" "}
-                <GlobeIcon className="w-5 h-5 ml-2 group-hover:translate-x-2 transition duration-300" />
+                <a
+                  href={project.links.demo}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center justify-center">
+                  Demo{" "}
+                  <GlobeIcon className="w-5 h-5 ml-2 group-hover:translate-x-2 transition duration-300" />
+                </a>
               </Button>
               <Button className="group w-full text-lg rounded-xl">
-                Code{" "}
-                <CodeIcon className="w-5 h-5 ml-2 group-hover:translate-x-2 transition duration-300" />
+                <a
+                  href={project.links.code}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center justify-center">
+                  Code{" "}
+                  <GithubIcon className="w-5 h-5 ml-2 group-hover:translate-x-2 transition duration-300" />
+                </a>
               </Button>
             </div>
           </Card>

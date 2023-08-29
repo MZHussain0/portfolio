@@ -131,13 +131,14 @@ export const projects = [
     },
   },
   {
-    id: 6,
-    image: "/projects/demo.png",
-    title: "Portfolio",
-    description: "A NextJS Portfolio website.",
+    id: 7,
+    image: "/projects/traviossa.png",
+    title: "Traviossa",
+    description:
+      "A NextJS travel reservation app. This app was made using Next.js 13, Tailwind, Prisma, Mongodb.",
     links: {
-      demo: "https://mzhussain.vercel.app",
-      code: "https://github.com/MZHussain0/portfolio",
+      demo: "https://traviossa.vercel.app",
+      code: "https://github.com/MZHussain0/traviossa-v2",
     },
   },
 ];
